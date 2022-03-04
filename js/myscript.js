@@ -63,16 +63,16 @@ btnPlay.addEventListener("click", function(){
 
 /**
  * 
- * Function that given an  Outside element 
- * creates N  <div></div> elements
- * Each <div> element has classNameOne and classNameTwo
- * Inside each <div> is written the number through the variable i
- * Inside element has an eventListener that add a classNameThree to itself
+ * Function that given an  outsideElement,
+ * creates N  <div></div> elements,
+ * each <div> element has classNameOne and classNameTwo,
+ * inside each <div> is written the number through the variable i,
+ * inside element has an eventListener that add a classNameThree to itself
  * 
- * @param {*} outsideElement outside element to which you can add the div
- * @param {*} classNameOne first calss name for the insideElement
- * @param {*} classNameTwo second class name for the insideElement 
- * @param {*} classNameThree class added with the event listener
+ * @param {*} outsideElement outside element to which you is added the <div>
+ * @param {*} classNameOne first calss name for the insideElement(<div>)
+ * @param {*} classNameTwo second class name for the insideElement(<div>)
+ * @param {*} classNameThree class added with the eventListener
  * @param {*} N value of how many numbers you want  
  */
 function drawBox(outsideElement,classNameOne,classNameTwo,classNameThree,N){

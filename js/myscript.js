@@ -3,8 +3,9 @@ const btnPlay = document.getElementById("my-btn-play");
 btnPlay.addEventListener("click", function(){
     
     const gridContainer = document.querySelector(".my-grid-container");
+    gridContainer.innerHTML = "";
     
-    selectValue = document.getElementById("my-select").value;
+    let selectValue = document.getElementById("my-select").value;
     
     if (selectValue == 1){
         for(let i = 0; i < 100; i++){

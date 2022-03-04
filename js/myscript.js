@@ -3,11 +3,14 @@ const btnPlay = document.getElementById("my-btn-play");
 btnPlay.addEventListener("click", function(){
     
     const gridContainer = document.querySelector(".my-grid-container");
+
+    // # reset to " " of the innerHtml under the div.my-grid-container
     gridContainer.innerHTML = "";
     
     let selectValue = document.getElementById("my-select").value;
     
     if (selectValue == 1){
+        // % without the function
         /*for(let i = 0; i < 100; i++){
             let divElement = document.createElement("div");
             gridContainer.appendChild(divElement);
@@ -22,12 +25,11 @@ btnPlay.addEventListener("click", function(){
             
             
         } */
-    
-
         drawBox(gridContainer,"my-grid-square","my-grid-square-one","background-red",100);
         
         
     } else if(selectValue == 2) {
+        // % without the function
         /*  for(let i = 0; i <81; i++){
             let divElement = document.createElement("div");
             gridContainer.appendChild(divElement);
@@ -38,10 +40,10 @@ btnPlay.addEventListener("click", function(){
                 divElement.classList.add("background-blue"); 
             });
         } */
-
         drawBox(gridContainer,"my-grid-square","my-grid-square-two","background-blue",81);
         
     } else if (selectValue == 3){
+        // % without the function
         /*  for(let i = 0; i <49; i++){
             let divElement = document.createElement("div");
             gridContainer.appendChild(divElement);

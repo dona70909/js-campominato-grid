@@ -20,6 +20,7 @@
 
 .background-red{
     background-color: red;
+    color: white;
 }
 
 .my-grid-square-two{
@@ -30,6 +31,7 @@
 
 .background-blue{
     background-color: blue;
+    color: white;
 }
 
 .my-grid-square-three{
@@ -40,4 +42,5 @@
 
 .background-green{
     background-color: green;
+    color: white;
 }

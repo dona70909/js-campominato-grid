@@ -5,6 +5,7 @@
 
 .my-grid-square{
     border: 1px solid;
+    float: left;
 }
 
 .my-grid-square-one{

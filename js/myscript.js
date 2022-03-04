@@ -63,29 +63,38 @@ btnPlay.addEventListener("click", function(){
     
 });
 
-/**
- * 
- * Function that given an  outsideElement,
- * creates N  <div></div> elements,
- * each <div> element has classNameOne and classNameTwo,
- * inside each <div> is written the number through the variable i,
- * inside element has an eventListener that add a classNameThree to itself
- * 
- * @param {*} outsideElement outside element to which you is added the <div>
- * @param {*} classNameOne first calss name for the insideElement(<div>)
- * @param {*} classNameTwo second class name for the insideElement(<div>)
- * @param {*} classNameThree class added with the eventListener
- * @param {*} N value of how many numbers you want  
- */
-function drawBox(outsideElement,classNameOne,classNameTwo,classNameThree,N){
+// % random + drowbox
+function drawBox(outsideElement,classNameOne,classNameTwo,classNameThree,N,classBorderContainer){
+    const arrayNumbersFunction = randomNumber(N,1);
     for (let i = 0; i < N ;i++){
         let insideElement = document.createElement("div");
         outsideElement.appendChild(insideElement);
+        outsideElement.classList.add(classBorderContainer);
         insideElement.classList.add(classNameOne,classNameTwo);
-        insideElement.innerHTML = i + 1;
-        
+        insideElement.innerHTML = arrayNumbersFunction[i];
         insideElement.addEventListener("click", function(){
             insideElement.classList.add(classNameThree); 
         }); 
     }
 }
+
+/**
+ * Function that creates N unique numbers from minimun(min) value to N(maximun)
+ * 
+ * @param {*} N how many numbers you would like and max value 
+ * @param {*} min minmun value of your numbers array
+ * @returns 
+ */
+
+function randomNumber(N,min){
+    const arrayNumbers = [];
+    while(arrayNumbers.length < N){
+        let number = Math.floor(Math.random() * N + min);
+        while(!arrayNumbers.includes(number)){
+            arrayNumbers.push(number);
+        }
+    }
+    return arrayNumbers;
+    
+}
+

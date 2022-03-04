@@ -18,14 +18,26 @@
     border-color: red;
 }
 
+.background-red{
+    background-color: red;
+}
+
 .my-grid-square-two{
     width: calc(100% / 9);
     height: calc(100% / 9);
     border-color: blue;
 }
 
+.background-blue{
+    background-color: blue;
+}
+
 .my-grid-square-three{
     width: calc(100% / 7);
     height: calc(100% / 7);
     border-color: green;
+}
+
+.background-green{
+    background-color: green;
 }
